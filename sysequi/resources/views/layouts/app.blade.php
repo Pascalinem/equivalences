@@ -33,6 +33,7 @@
 
             <!-- Page Content -->
             <main>
+                test
                 {{ $slot }}
             </main>
         </div>

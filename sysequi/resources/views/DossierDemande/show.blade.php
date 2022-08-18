@@ -1,8 +1,16 @@
 
 <x-text>
    <div class="mx-8">
-       <div class="font-rocksalt font-bold text-4xl text-green-900 text-center py-6 uppercase"> Welcome 
-
+       <div class="font-rocksalt font-bold text-4xl text-green-900 text-center py-6 uppercase"> Dossier 
+        {{ $dossier->numero_demande}}
+        {{ $dossier->date_demande }}
+        {{ $dossier->type_demande }}
+        {{ $dossier->montant_frais }}
+        {{ $dossier->refugie_reconnu}}
+        {{ $dossier->actiris }}
+        {{ $dossier->vdab }}
+        {{ $dossier->statut }}
+           
        </div>
        <div class="flex flex-row ">
            <div class="flex  basis-1/3">  

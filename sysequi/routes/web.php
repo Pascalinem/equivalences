@@ -28,4 +28,5 @@ Route::middleware([
     })->name('dashboard');
 });
 
-Route::get('/dossierDemande', [DossierDemandeController::class, 'index'])->name('dossier_demande_index');
+Route::get('/dossier', [DossierDemandeController::class, 'index'])->name('test');
+Route::get('/dossier/{id}', [DossierDemandeController::class, 'show'])->where('id', '[0-9]+')->name('show');

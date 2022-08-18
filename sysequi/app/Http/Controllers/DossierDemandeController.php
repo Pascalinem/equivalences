@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\DossierDemande;
 
 class DossierDemandeController extends Controller
 {
+    
     /**
      * Display a listing of the resource.
      *
@@ -13,7 +15,9 @@ class DossierDemandeController extends Controller
      */
     public function index()
     {
-        //
+    
+        
+        return view("DossierDemande.index");
     }
 
     /**
@@ -45,7 +49,12 @@ class DossierDemandeController extends Controller
      */
     public function show($id)
     {
-        //
+        
+        $dossier = DossierDemande::find($id);
+        
+        return view('DossierDemande.show',[
+            'dossier' => $dossier,
+        ]);
     }
 
     /**
