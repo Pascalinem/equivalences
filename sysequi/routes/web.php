@@ -30,3 +30,5 @@ Route::middleware([
 
 Route::get('/dossier', [DossierDemandeController::class, 'index'])->name('test');
 Route::get('/dossier/{id}', [DossierDemandeController::class, 'show'])->where('id', '[0-9]+')->name('show');
+Route::get('/dossier/nouveau', function () { return view('dossierDemande.create'); });
+Route::get('/dossier/list', function () { return view('dossierDemande.list'); });
