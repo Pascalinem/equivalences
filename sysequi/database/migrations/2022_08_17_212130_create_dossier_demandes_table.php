@@ -22,7 +22,7 @@ class CreateDossierDemandesTable extends Migration
             $table->boolean('refugie_reconnu');
             $table->boolean('actiris');
             $table->boolean('vdab');
-            $table->boolean('statut');
+            $table->string('statut');
             $table->timestamps();
         });
     }
